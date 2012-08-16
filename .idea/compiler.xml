@@ -5,6 +5,7 @@
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/App/gen" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/Lib/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/App/gen-external-apklibs/com.devoxy.android_template-project-app_1.0.0-SNAPSHOT/gen" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/Test/gen" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
@@ -21,6 +22,9 @@
       <entry name="?*.ftl" />
     </wildcardResourcePatterns>
     <annotationProcessing enabled="false" useClasspath="true" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-target 1.6" />
   </component>
 </project>
 

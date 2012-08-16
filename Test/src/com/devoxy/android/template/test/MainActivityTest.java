@@ -1,6 +1,7 @@
-package com.devoxy.android.template;
+package com.devoxy.android.template.test;
 
 import android.test.ActivityInstrumentationTestCase2;
+import com.devoxy.android.template.MainActivity;
 
 /**
  * This is a simple framework for a test of an Application.  See
@@ -9,7 +10,7 @@ import android.test.ActivityInstrumentationTestCase2;
  * <p/>
  * To run this test, you can type:
  * adb shell am instrument -w \
- * -e class com.devoxy.android.template.MainActivityTest \
+ * -e class com.devoxy.android.template.test.MainActivityTest \
  * com.devoxy.android.template.tests/android.test.InstrumentationTestRunner
  */
 public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
