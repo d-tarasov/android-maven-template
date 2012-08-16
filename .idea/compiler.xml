@@ -3,9 +3,9 @@
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
     <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/App/gen" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/Lib/gen" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/App/gen-external-apklibs/com.devoxy.android_template-project-app_1.0.0-SNAPSHOT/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/Lib/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/App/gen" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/Test/gen" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />

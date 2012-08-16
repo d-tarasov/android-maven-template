@@ -1,4 +1,4 @@
-package com.devoxy.android.template.test;
+package com.devoxy.android.template.test.instrumentation;
 
 import android.test.ActivityInstrumentationTestCase2;
 import com.devoxy.android.template.MainActivity;
@@ -10,7 +10,7 @@ import com.devoxy.android.template.MainActivity;
  * <p/>
  * To run this test, you can type:
  * adb shell am instrument -w \
- * -e class com.devoxy.android.template.test.MainActivityTest \
+ * -e class com.devoxy.android.template.test.instrumentation.MainActivityTest \
  * com.devoxy.android.template.tests/android.test.InstrumentationTestRunner
  */
 public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
@@ -19,4 +19,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         super("com.devoxy.android.template", MainActivity.class);
     }
 
+    public void testSimpleAssert() throws Exception {
+        assertTrue(true);
+    }
 }

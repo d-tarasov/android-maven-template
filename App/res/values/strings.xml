@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">App</string>
+    <string name="app_name">Android Maven Template</string>
+    <string name="hello_main_activity">Hello World, MainActivity</string>
+    <string name="lib_activity">Library Activity</string>
 </resources>
