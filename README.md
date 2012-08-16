@@ -21,7 +21,7 @@ Project define 3 different build profiles which allow you to build your Android 
 During the build maven process targeted resources and substitutes required values from profiles.
 
 Project and testing frameworks organized as follows:
-def gfm(text)
+```
  Root
  |---- App
  |    |---- src
@@ -39,4 +39,4 @@ def gfm(text)
       |---- src
            |---- Instrumentation
            |---- Robotium
-end
+```
