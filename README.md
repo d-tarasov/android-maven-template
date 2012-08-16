@@ -22,18 +22,20 @@ During the build maven process targeted resources and substitutes required value
 
 Project and testing frameworks organized as follows:
 > Root
-    App
-      src
-      test
-        JUnit
-        Robolectric
-    Lib
-      src
-      test
-        JUnit
-        Robolectric
-    Test
-      src
-        Instrumentation
-        Robotium
+> |---- App
+> |    |---- src
+> |    |---- test
+> |         |---- JUnit
+> |         |---- Robolectric
+> |
+> |---- Lib
+> |    |---- src
+> |    |---- test
+> |         |---- JUnit
+> |         |---- Robolectric
+> |
+> |---- Test
+>       |---- src
+>             |---- Instrumentation
+>             |---- Robotium
 
