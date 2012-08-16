@@ -21,7 +21,7 @@ Project define 3 different build profiles which allow you to build your Android 
 During the build maven process targeted resources and substitutes required values from profiles.
 
 Project and testing frameworks organized as follows:
-> Root
+`> Root
 > |---- App
 > |    |---- src
 > |    |---- test
@@ -37,5 +37,5 @@ Project and testing frameworks organized as follows:
 > |---- Test
 >       |---- src
 >             |---- Instrumentation
->             |---- Robotium
+>             |---- Robotium`
 
