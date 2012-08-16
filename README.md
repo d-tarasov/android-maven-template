@@ -8,10 +8,10 @@ Android template project which builds with maven, contains 4 modules:
   + Lib.
 
 For each module configured testing frameworks:
-  + JUnit
-  + Android Instrumentation
+  + [JUnit](http://www.junit.org/)
+  + [Android Instrumentation](http://developer.android.com/tools/testing/testing_android.html)
   + [Robolectric](http://pivotal.github.com/robolectric/)
-  + Robotium
+  + [Robotium](http://code.google.com/p/robotium/)
 
 Project define 3 different build profiles which allow you to build your Android project in different environments:
   + Development
@@ -21,7 +21,7 @@ Project define 3 different build profiles which allow you to build your Android 
 During the build maven process targeted resources and substitutes required values from profiles.
 
 Project and testing frameworks organized as follows:
-`
+def gfm(text)
  Root
  |---- App
  |    |---- src
@@ -38,5 +38,5 @@ Project and testing frameworks organized as follows:
  |---- Test
       |---- src
            |---- Instrumentation
-           |---- Robotium`
-
+           |---- Robotium
+end
