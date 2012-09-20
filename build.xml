@@ -1,0 +1,30 @@
+<project name="Maven Android Template Release Helper" default="Release" basedir=".">
+
+    <description>
+        This script prepare maven pom-files to release (changing required properties in pom)
+    </description>
+
+    <property file="version.properties"/>
+
+    <property name="project.version" value="${template.version.major}.${template.version.minor}.${template.version.build}"/>
+
+    <target name="Release" description="Change pom modules version and application version name and version code">
+        <replaceregexp
+                match="&lt;version&gt;.*&lt;/version&gt;"
+                replace="&lt;version&gt;${project.version}&lt;/version&gt;">
+            <fileset dir="${basedir}">
+                <include name="**/pom.xml"/>
+            </fileset>
+        </replaceregexp>
+        <replaceregexp
+                file="pom.xml"
+                match="&lt;project.version.name.number&gt;.*&lt;/project.version.name.number&gt;"
+                replace="&lt;project.version.name.number&gt;${project.version}&lt;/project.version.name.number&gt;">
+        </replaceregexp>
+        <replaceregexp
+                file="pom.xml"
+                match="&lt;project.version.code&gt;.*&lt;/project.version.code&gt;"
+                replace="&lt;project.version.code&gt;${template.version.code}&lt;/project.version.code&gt;"/>
+    </target>
+
+</project>

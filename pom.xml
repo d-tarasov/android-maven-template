@@ -132,14 +132,14 @@
                     <include>**/*.properties</include>
                 </includes>
             </resource>
-            <!--<resource>
+            <resource>
                 <directory>${project.basedir}</directory>
                 <filtering>true</filtering>
                 <targetPath>${project.build.directory}</targetPath>
                 <includes>
                     <include>AndroidManifest.xml</include>
                 </includes>
-            </resource>-->
+            </resource>
         </resources>
 
         <plugins>
@@ -168,7 +168,7 @@
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.3.2</version>
                 <extensions>true</extensions>
                 <configuration>
                     <sdk>
@@ -189,7 +189,13 @@
                     </emulator>
                     <undeployBeforeDeploy>true</undeployBeforeDeploy>
                     <assetsDirectory>${project.build.directory}/filtered-assets</assetsDirectory>
-                    <!--<androidManifestFile>${project.build.directory}/AndroidManifest.xml</androidManifestFile>-->
+                    <!--
+                    TODO
+                       APKLIB packaging doesn't work if we filtering AndroidManifest see
+                       http://code.google.com/p/maven-android-plugin/issues/detail?id=194
+                       for workaround
+                    -->
+                    <androidManifestFile>${project.build.directory}/AndroidManifest.xml</androidManifestFile>
                     <zipalign>
                         <skip>false</skip>
                         <verbose>${project.verbosity}</verbose>
