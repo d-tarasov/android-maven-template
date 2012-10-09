@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project
-        xmlns="http://maven.apache.org/POM/4.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+     xmlns="http://maven.apache.org/POM/4.0.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -87,7 +87,8 @@
                                     <includes>
                                         <include>${project.build.directory}/*.apk</include>
                                     </includes>
-                                    <keystore>${project.basedir}/keystore</keystore> <!-- TODO add keystore to project -->
+                                    <keystore>${project.basedir}/keystore</keystore>
+                                    <!-- TODO add keystore to project -->
                                     <storepass><!-- TODO --></storepass>
                                     <keypass><!-- TODO --></keypass>
                                     <alias><!-- TODO --></alias>
@@ -202,13 +203,15 @@
         </plugins>
     </build>
 
-    <!-- TODO deployment into nexus -->
-    <!--<distributionManagement>
+    <distributionManagement>
         <repository>
-            <id>mycompany-repository</id>
-            <name>MyCompany Repository</name>
-            <url>scp://repository.mycompany.com/repository/maven2</url>
+            <id>repo</id>
+            <url>https://github.com/d-tarasov/maven-repo/raw/master/releases</url>
         </repository>
-    </distributionManagement>-->
+        <snapshotRepository>
+            <id>snapshot-repo</id>
+            <url>https://github.com/d-tarasov/maven-repo/raw/master/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
